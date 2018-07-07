@@ -1,5 +1,6 @@
 body {
     color: #ffffff;
+    background-color: #000000;
 }
 
 header {
@@ -14,4 +15,8 @@ header {
 .jumbotron {
     margin-top: 30vh;
     background-color: #00000066 !important;
+}
+
+.carousel-caption {
+    background-color: #000000BF !important;
 }
