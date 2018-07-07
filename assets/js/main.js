@@ -1,7 +1,7 @@
 $("document").ready(function () {
     
     // TODO: finish the code below to dynamically create the portfolio photo carousel
-    /* // Portfolio items
+    // Portfolio items
     const portfolioMarvel = {
         Image: "marvel-teamup.png",
         Title: "Marvel Teamup",
@@ -34,19 +34,34 @@ $("document").ready(function () {
 
     // Add the portfolio items to the DOM
     portfolioItems.forEach(function (item, index) {
-        // Create the portfolio item that will go into the carousel
+        // Create all the individual elements that will comprise a portfolio item
         let portItem = $("<div>").addClass("carousel-item");
         if(index === 0) {
-            portImage.addClass("active");
+            portItem.addClass("active");
         };
-        // Create the image
         let portImage = $("<img>").attr({
             class: "d-block w-100",
             src: "assets/img/" + item.Image,
             alt:  item.Title
         });
+        let portInfo = $("<div>").addClass("carousel-caption");
         let portTitle = $("<h5>").text(item.Title);
         let portDescription = $("<p>").text(item.Description).addClass("d-none d-md-block mb-0");
-    }); */
+        // I could probably do these next two in a loop.
+        let portPageLink = $("<a>").text("View Page").attr({
+            href : "https://maxyeamans.github.io/" + item.GitHubName,
+            target : "_blank"
+        });
+        let portSourceLink = $("<a>").text("View Source").attr({
+            href : "https://www.github.com/maxyeamans/" + item.GitHubName,
+            target : "_blank"
+        });
+        // Add all of the portfolio item info to the caption box
+        portInfo.append(portTitle, portDescription, portPageLink, " | ", portSourceLink);
+        // Add the portfolio image and caption box to the item
+        portItem.append(portImage, portInfo);
+        // Add the portfolio item itself to the photo carousel
+        $("#portfolio-items").append(portItem);
+    });
 
 });
