@@ -54,7 +54,8 @@
                 <p class="lead">I'm an aspiring web developer living in Tempe, AZ. After being interested in web dev for nearly two decades,
                     I'm on my way to making that my full time gig by completing a coding bootcamp. My approach to coding
                     so far emphasizes minimalism over flashy design, solid user interfaces across platforms, and well-commented
-                    code. (Seriously, I love me some comments.)</p> <!-- Here's one just for the hell of it. -->
+                    code. (Seriously, I love me some comments.)</p>
+                <!-- Here's one just for the hell of it. -->
             </div>
         </div>
         <!-- End About Me -->
@@ -66,24 +67,28 @@
             <h2 class="display-4">Portfolio</h2>
             <p>Check out some of the stuff I've created for the bootcamp so far.</p>
             <!-- Begin Photo Carousel -->
-            <div id="carouselPortfolio" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselPortfolio" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselPortfolio" data-slide-to="1"></li>
-                    <li data-target="#carouselPortfolio" data-slide-to="2"></li>
-                    <li data-target="#carouselPortfolio" data-slide-to="3"></li>
-                </ol>
-                <div class="carousel-inner" id="portfolio-items">
-                    <!-- Portfolio items will be added here dynamically -->
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-9">
+                    <div id="carouselPortfolio" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselPortfolio" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselPortfolio" data-slide-to="1"></li>
+                            <li data-target="#carouselPortfolio" data-slide-to="2"></li>
+                            <li data-target="#carouselPortfolio" data-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner" id="portfolio-items">
+                            <!-- Portfolio items will be added here dynamically -->
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselPortfolio" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselPortfolio" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselPortfolio" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselPortfolio" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
         </section>
         <!-- End Portfolio -->
@@ -110,8 +115,14 @@
                     </form>
                 </div>
                 <div class="col-md-6 text-center">
-                    <h3><a href="https://www.linkedin.com/in/maxyeamans/" target="_blank"><i class="fab fa-linkedin fa-3x"></i> LinkedIn Profile</h3></a>
-                    <h3><a href="https://github.com/maxyeamans" target="_blank"><i class="fab fa-github fa-3x"></i> GitHub Profile</h3></a>
+                    <h3>
+                        <a href="https://www.linkedin.com/in/maxyeamans/" target="_blank">
+                            <i class="fab fa-linkedin fa-3x"></i> LinkedIn Profile</h3>
+                    </a>
+                    <h3>
+                        <a href="https://github.com/maxyeamans" target="_blank">
+                            <i class="fab fa-github fa-3x"></i> GitHub Profile</h3>
+                    </a>
                 </div>
             </div>
         </section>
