@@ -1,0 +1,22 @@
+body {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+header {
+    min-height: 100vh;
+    background-image: url("../img/bg-xl.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.jumbotron {
+    margin-top: 30vh;
+    background-color: #00000066 !important;
+}
+
+.carousel-caption {
+    background-color: #000000BF !important;
+}
